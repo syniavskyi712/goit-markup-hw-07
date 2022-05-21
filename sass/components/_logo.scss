@@ -1,10 +1,11 @@
 .logo {
     display: block;
 
-    font-family: "Raleway", sans-serif;
+    font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    // font-size: 26px;
+    font-size: 24px;
+
     letter-spacing: 0.03em;
     text-decoration: none;
     &-accent {

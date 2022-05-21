@@ -26,6 +26,11 @@
       <div class="container header__container">
         <a href="./index.html" lang="en" class="logo header__logo"><span class="logo-accent">Web</span>Studio
         </a>
+        <button type="button" class="header__menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-btn__icon" width="40" height="40">
+            <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="site-nav">
           <ul class="list site-nav__list">
             <li class="site-nav__item">
@@ -131,7 +136,10 @@
           <ul class="list directions__list">
             <li class="directions__item">
               <img
-                src="./images/directions/img1.jpg"
+                srcset="
+                  ./images/directions/compressjpeg/img-1-desk-min.jpeg 1x,
+                  ./images/directions/compressjpeg/img-1-desk-2x-min.jpeg 2x"
+                src="./images/directions/compressjpeg/img-1-desk-min.jpeg"
                 alt="Пишем код"
                 width="370"
                 height="294"
@@ -141,7 +149,10 @@
             </li>
             <li class="directions__item">
               <img
-                src="./images/directions/img2.jpg"
+                srcset="
+                  ./images/directions/compressjpeg/img-2-desk-min.jpeg 1x,
+                  ./images/directions/compressjpeg/img-2-desk-2x-min.jpeg 2x"
+                src="./images/directions/compressjpeg/img-2-desk-min.jpeg"
                 alt="Адаптируем сайт под смартфон"
                 width="370"
                 height="294"
@@ -151,7 +162,10 @@
             </li>
             <li class="directions__item">
               <img
-                src="./images/directions/img3.jpg"
+                srcset="
+                  ./images/directions/compressjpeg/img-3-desk-min.jpeg 1x,
+                  ./images/directions/compressjpeg/img-3-desk-2x-min.jpeg 2x"
+                src="./images/directions/compressjpeg/img-3-desk-min.jpeg"
                 alt="Разрабатываем дизайн"
                 width="370"
                 height="294"
@@ -168,13 +182,22 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team__card-set">
             <li class="team__card">
-              <img
-                src="./images/team/img1.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source 
+                srcset="
+                  ./images/team/compressjpeg/team-1-desk-min.jpeg 1x,
+                  ./images/team/compressjpeg/team-1-desk-2x-min.jpeg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="
+                  ./images/team/compressjpeg/team-1-tab-min.jpeg 1x,
+                  ./images/team/compressjpeg/team-1-tab-2x-min.jpeg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="
+                  ./images/team/compressjpeg/team-1-mob-min.jpeg 1x,
+                  ./images/team/compressjpeg/team-1-mob-2x-min.jpeg 2x" 
+                  media="(min-width: 320px)">
+                <img src="./images/team/compressjpeg/team-1-mob-min.jpeg" alt="Фото" class="team__img" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -219,13 +242,18 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/team/img2.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="
+                                ./images/team/compressjpeg/team-2-desk-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-2-desk-2x-min.jpeg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                                ./images/team/compressjpeg/team-2-tab-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-2-tab-2x-min.jpeg 2x" media="(min-width: 768px)">
+                <source srcset="
+                                ./images/team/compressjpeg/team-2-mob-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-2-mob-2x-min.jpeg 2x" media="(min-width: 320px)">
+                <img src="./images/team/compressjpeg/team-2-mob-min.jpeg" alt="Фото" class="team__img" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -262,13 +290,18 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/team/img3.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="
+                                ./images/team/compressjpeg/team-3-desk-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-3-desk-2x-min.jpeg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                                ./images/team/compressjpeg/team-3-tab-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-3-tab-2x-min.jpeg 2x" media="(min-width: 768px)">
+                <source srcset="
+                                ./images/team/compressjpeg/team-3-mob-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-3-mob-2x-min.jpeg 2x" media="(min-width: 320px)">
+                <img src="./images/team/compressjpeg/team-3-mob-min.jpeg" alt="Фото" class="team__img" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -313,13 +346,18 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/team/img4.jpg"
-                alt="Фото"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source srcset="
+                                ./images/team/compressjpeg/team-4-desk-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-4-desk-2x-min.jpeg 2x" media="(min-width: 1200px)">
+                <source srcset="
+                                ./images/team/compressjpeg/team-4-tab-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-4-tab-2x-min.jpeg 2x" media="(min-width: 768px)">
+                <source srcset="
+                                ./images/team/compressjpeg/team-4-mob-min.jpeg 1x,
+                                ./images/team/compressjpeg/team-4-mob-2x-min.jpeg 2x" media="(min-width: 320px)">
+                <img src="./images/team/compressjpeg/team-4-mob-min.jpeg" alt="Фото" class="team__img" />
+              </picture>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -413,48 +451,50 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__wrapper">
-          <a href="./index.html" lang="en" class="logo footer__logo link"><span class="logo-accent">Web</span>Studio</a>
-          <address class="address">
-            <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@example.com" class="link address__link">info@example.com</a>
-            <a href="tel:+380991111111" class="link address__link">+38 099 111 11 11</a>
-          </address>
-        </div>
-        <div class="socials footer__socials">
-          <p class="secondary-title socials__secondary-title">присоединяйтесь</p>
-          <ul class="list socials__list">
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer__wrapper-address">
+            <a href="./index.html" lang="en" class="logo footer__logo link"><span class="logo-accent">Web</span>Studio</a>
+            <address class="address">
+              <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="mailto:info@example.com" class="link address__link">info@example.com</a>
+              <a href="tel:+380991111111" class="link address__link">+38 099 111 11 11</a>
+            </address>
+          </div>
+          <div class="socials footer__socials">
+            <p class="secondary-title footer__secondary-title">присоединяйтесь</p>
+            <ul class="list socials__list">
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer__form-box">
-          <p class="secondary-title form-box__secondary-title">Подпишитесь на рассылку</p>
+          <p class="secondary-title footer__secondary-title">Подпишитесь на рассылку</p>
           <form class="footer-form">
             <input
               type="email"
@@ -532,6 +572,36 @@
       </div>
     </div>
 
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__button js-close-menu" type="button">
+        <svg class="mobile-menu__icon" width="40" height="40">
+          <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__site-nav">
+        <ul class="list mobile-menu__list">
+          <li class="mobile-menu__item"><a href="./index.html" class="link mobile-menu__link mobile-menu__link--current">Студия</a></li>
+          <li class="mobile-menu__item"><a href="./portfolio.html" class="link mobile-menu__link">Портфолио</a></li>
+          <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__wrapper">
+        <a href="tel:+380961111111" class="link mobile-menu__tel">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="link mobile-menu__email">info@devstudio.com</a>
+        <ul class="list mobile-menu__socials-list">
+          <li class="mobile-menu__socials-item"><a href="" class="link mobile-menu__socials-link">Instagram</a></li>
+          <li class="mobile-menu__socials-item"><a href="" class="link mobile-menu__socials-link">Twitter</a></li>
+          <li class="mobile-menu__socials-item"><a href="" class="link mobile-menu__socials-link">Facebook</a></li>
+          <li class="mobile-menu__socials-item"><a href="" class="link mobile-menu__socials-link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

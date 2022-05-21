@@ -20,13 +20,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    
+    width: calc(100% - 30px);
     padding: 40px;
 
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @media screen and (max-width: 479px) {
+        padding: 40px 8.3% 8.3%;
+    }
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal__btn-close {
@@ -69,6 +79,9 @@
     letter-spacing: 0.03em;
 
     color: #212121;
+    @media screen and (max-width: 350px) {
+        font-size: 16px;
+    }
 }
 
 .form__field {
@@ -76,6 +89,9 @@
 
     display: block;
     margin-bottom: 10px;
+    @media screen and (max-width: 350px) {
+        margin-bottom: 5px;
+    }
 }
 
 .form__label {
@@ -84,6 +100,9 @@
     letter-spacing: 0.01em;
 
     color: var(--text-color);
+    @media screen and (max-width: 350px) {
+        font-size: 10px;
+    }
 }
 
 .form__input {
@@ -119,11 +138,18 @@
     height: 120px;
     resize: none;
     &::placeholder {
-        font-size: 12px;
-        line-height: 1.17;
+        font-size: 14px;
+        line-height: 1.14;
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);
+        @media screen and (max-width: 350px) {
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 350px) {
+        height: 80px;
+        margin-bottom: 10px;
     }
 }
 
@@ -139,6 +165,7 @@
     border: 2px solid #212121;
     width: 16px;
     height: 15px;
+    flex-shrink: 0;
 
     border-radius: 2px;
     margin-right: 7px;
@@ -155,11 +182,19 @@
 }
 
 .form__agreement-text {
-    font-size: 14px;
-    line-height: 1.71;
+    
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     color: var(--text-color);
+    @media screen and (max-width: 350px) {
+        font-size: 10px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form__link {
