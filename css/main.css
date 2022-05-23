@@ -668,6 +668,8 @@ body {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--second-bgd-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero-bg-mob.jpg);
   background-repeat: no-repeat;
@@ -796,7 +798,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .advantages__title {
     text-align: left;
   }
@@ -1105,6 +1107,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__item:nth-child(1) .portfolio__text {
+    padding-bottom: 56px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     flex-basis: calc(100% / 3 - 30px);
@@ -1146,6 +1154,12 @@ body {
 
 .portfolio__link:hover .portfolio__description {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 360px) {
+  .portfolio__description {
+    font-size: 14px;
+  }
 }
 
 .portfolio__text {
@@ -1204,7 +1218,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__wrapper-address {
-    margin-right: 90px;
+    margin-right: 70px;
   }
 }
 
